@@ -1,11 +1,14 @@
 package pl.dmcs.app.model
 
 import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
 data class Location(
         @Id
+        @GeneratedValue
         private val id: Int,
         val acc: String,
         val alt: String,
